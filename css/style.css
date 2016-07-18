@@ -600,6 +600,8 @@ header {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fb3e38', endColorstr='#ff8f30', GradientType=1);
   /* IE6-9 */
+
+  margin-bottom: 20px;
 }
 
 .header__logo,
@@ -739,9 +741,56 @@ header {
 
 .header__top {
   padding-top: 20px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgba(255,255,255,.2);
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
+
+
+/***********************************
+             Nav
+ ***********************************/
+.nav {
+  padding-top:13px;
+}
+.nav__list {
+  text-align: justify;
+}
+
+.nav__list:after {
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  content: '';
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link:hover .nav__title {
+  color: #ffc960;
+}
+.nav__link:hover .nav__icon svg * {
+  fill: #ffc960;
+}
+
+.nav__icon,
+.nav__title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav__icon svg *,
+.nav__title svg * {
+  fill: #fff;
+}
+
+.nav__title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
 /***********************************
              Footer
  ***********************************/
