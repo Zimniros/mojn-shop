@@ -827,6 +827,18 @@ header {
   background: url('../images/decor/arrow.png');
 }
 
+/***********************************
+             Title
+ ***********************************/
+
+.title {
+  font-family: 'helveticaneuecyrlight';
+  font-size: 24px;
+  color: #2e2e2e;
+  font-weight: normal;
+  margin-top: 0;
+}
+
 
 /***********************************
              Footer
