@@ -827,6 +827,7 @@ header {
   background: url('../images/decor/arrow.png');
 }
 
+
 /***********************************
              Title
  ***********************************/
@@ -834,9 +835,157 @@ header {
 .title {
   font-family: 'helveticaneuecyrlight';
   font-size: 24px;
-  color: #2e2e2e;
   font-weight: normal;
   margin-top: 0;
+  color: #2e2e2e;
+}
+
+
+/***********************************
+             Content
+ ***********************************/
+
+.content-wrapper .container {
+  background: #fff;
+}
+
+.content-wrapper .container:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+}
+
+.content {
+  float: left;
+  width: 75%;
+  border-left: 1px solid #e7e7e7;
+}
+
+.products__item {
+  position: relative;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.products__item:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.products__slideshow {
+  float: left;
+  width: 30%;
+  padding: 25px;
+}
+
+.slideshow__display {
+  position: relative;
+  height: 235px;
+}
+
+.slideshow__display-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 95%;
+  max-height: 95%;
+  margin: auto;
+}
+
+
+.products__desc {
+  float: left;
+  width: 45%;
+  padding: 40px 25px;
+}
+.products__desc:before {
+  content: "";
+  display: block;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background: #e7e7e7;
+  left: 30%;
+}
+
+.slideshow__thumbs:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.slideshow__thumbs-item {
+  float: left;
+  width: 25%;
+}
+
+.slideshow__thumbs-link {
+  position: relative;
+  display: block;
+  height: 54px;
+}
+
+.slideshow__thumbs-link img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  max-width: 95%;
+  max-height: 95%;
+  margin: auto;
+}
+
+.products__title {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.products__desc-content {
+  font-size: 14px;
+  color: #676767;
+}
+
+.products__desc-content li {
+  margin-bottom: 10px;
+}
+
+.products__price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.products__price-inner {
+  position: relative;
+  height: 100%;
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+}
+
+.products__buy {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  display: block;
+  padding: 10px 40px;
+  background: #ff8e2f;
+  color: #fff;
+  border-radius: 50px;
 }
 
 
